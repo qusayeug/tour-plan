@@ -356,11 +356,11 @@ template {
   display: none;
 }
 
-.header {
-  background-color: #fffff;
+.navbar {
+  background-color: #ffffff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ template {
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
@@ -432,7 +432,7 @@ template {
 .user__name {
   margin-left: 18px;
   font-size: 14px;
-  line-height: 18;
+  line-height: 18px;
   color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
