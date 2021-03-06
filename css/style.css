@@ -541,6 +541,7 @@ template {
 }
 
 .hotel {
+  padding-top: 23px;
   padding-bottom: 70px;
 }
 
@@ -632,6 +633,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+.stars-5 {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
@@ -749,6 +754,9 @@ template {
   }
   .stars {
     margin-right: 18px;
+  }
+  .hotel {
+    padding-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
