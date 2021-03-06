@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+* button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Mulish', serif;
   background-color: #F5FAFE;
@@ -537,7 +541,6 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
   padding-bottom: 70px;
 }
 
@@ -598,6 +601,7 @@ template {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+  font-size: 8px;
 }
 
 .offer {
@@ -742,6 +746,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .stars {
+    margin-right: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
