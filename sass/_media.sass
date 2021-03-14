@@ -10,6 +10,9 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
+    .card
+        width: 220px
+        height: 220px
 @media (max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -48,6 +51,14 @@
         &-slider
             &__item
                 max-width: 580px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 380px
+        height: 250px
 @media (max-width: 820px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -93,6 +104,9 @@
                     right: 2px
             &__text
                 height: 133px
+    .card
+        width: 340px
+        height: 250px
 @media (max-width: 725px)
     .container, .newsletter-wrapper
         max-width: 550px
@@ -166,6 +180,9 @@
                     margin-left: -85px
                 &--next
                     margin-left: 85px
+    .card
+        width: 49%
+        height: 250px
 @media (max-width: 576px)
     .hotel
         &__slider
@@ -181,9 +198,13 @@
             line-height: 23px
             margin: auto
             margin-bottom: 42px
+
 @media ( max-width: 480px    )
     .subscribe
         width: 100%
+    .card
+        width: 90%
+
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -266,3 +287,5 @@
                     margin-left: -90px
                 &--next
                     margin-left: 89px
+    .card
+        width: 100%
