@@ -1,5 +1,5 @@
 .reviews
-    padding: 0px 0 70px 0
+    padding: 40px 0 70px 0
     &__title
         font-style: normal
         font-weight: bold
@@ -7,6 +7,7 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
+        margin-top: 0
         margin-bottom: 70px
     &-slider
         &__item
@@ -14,7 +15,7 @@
             display: flex
             flex-direction: column
             align-items: center
-            width: 730px
+            max-width: 730px
             margin: 45px auto 0
             background-color: #fff
             border-radius: 8px
@@ -40,22 +41,24 @@
         &__button
             position: absolute
             top: 50%
-            transform: translateY(-50%)
+            transform: translateY(-90%)
             width: 30px
             height: 30px
-            background-repeat: no-repeat
-            box-sizing: 10px
+            background-size: 10px
             background-position: center
-            border: none
-            background-color: transparent
             cursor: pointer
+            border: none
             z-index: 99
             &--prev
-                background-image: url(../img/arrow-prev-secondary.svg)
-                left: 0
+                background-size: 10px
+                background: url("../img/arrow-prev-secondary.svg") no-repeat
+                background-position: center
+                left: 14px
             &--next
-                background-image: url(../img/arrow-next-secondary.svg)
-                right: 0
+                background-size: 10px
+                background: url("../img/arrow-next-secondary.svg") no-repeat
+                background-position: center
+                right: 22px
         &__profile
             display: flex
             flex-direction: column
@@ -67,7 +70,7 @@
             height: 90px
             border-radius: 50%
             object-fit: cover
-            margin-bottom: 9px
+            // margin-bottom: 9px
         &__username
             font-style: normal
             font-weight: bold
@@ -84,6 +87,8 @@
         &__rating
             display: flex
             align-items: center
+        &__image
+            margin-right: 3px
         &__text
             max-width: 537px
             font-style: normal
