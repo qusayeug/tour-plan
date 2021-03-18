@@ -106,9 +106,6 @@
         &__search
             margin-left: 27px
         &-menu
-            width: 673px
-            padding: 21px 0
-            margin: auto
             &__link
                 font-size: 12px
                 line-height: 15px
@@ -147,6 +144,12 @@
     body
         padding-top: 78px
     .navbar
+        &__user, &__search
+            &--mobile
+                &_hidden
+                    display: none
+                &-visible
+                    display: flex
         &--mobile
             &_fixed
                 position: fixed
@@ -154,32 +157,32 @@
                 top: 0
                 right: 0
                 z-index: 99
-        &__user, &__search
-            &--mobile
-                &_hidden
-                    display: none
-                &-visible
-                    display: flex
         &__user
             flex-direction: column
             justify-content: center
         &-bottom
-            display: none
             position: fixed
+            display: none
             left: 0
             right: 0
             bottom: 0
             top: 78px
-            padding-top: 30px
             &--visible
                 display: block
+                overflow-y: auto
         &-menu
             flex-direction: column
             &__item
-                margin-bottom: 20px
+                margin-bottom: 17px
+                &:nth-child(2)
+                    margin-bottom: 38px
                 &--mobile
                     &_visible
                         display: block
+                        margin-bottom: 25px
+            &__user
+                flex-direction: column
+                justify-content: center
     .menu
         &-button
             display: flex
@@ -198,6 +201,8 @@
     .user
         &__name
             &--light
+                font-style: normal
+                font-weight: normal
                 color: $light
                 margin-left: 0
                 margin-top: 10px
@@ -348,6 +353,8 @@
             margin-bottom: 42px
     .card
         width: 100%
+    .search
+        width: 245px
 @media screen and ( max-width: 480px )
     .subscribe
         width: 100%
@@ -362,9 +369,6 @@
 @media screen and ( max-width: 320px )
     .container
         max-width: 280px
-        .navbar
-            &-top
-                padding: 26px 0
     .logo
         &__image
             width: 99px
