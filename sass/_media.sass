@@ -98,8 +98,8 @@
 @media screen and ( max-width: 820px )
     .container, .newsletter-wrapper
         max-width: 700px
-        .logo
-            width: 132px
+    .logo
+        width: 132px
     .navbar
         &-top
             padding: 30px 0
@@ -173,10 +173,10 @@
             margin-bottom: 44px
         &__bottom
             grid-column: 1 / 4
-        &-links
-            justify-self: start
-        &-pay
-            grid-column: 5 / 8
+            &-links
+                justify-self: start
+            &-pay
+                grid-column: 5 / 8
 @media screen and ( max-width: 767px )
     .footer
         &-wrapper
@@ -205,13 +205,13 @@
             grid-row: 7
             grid-column: 1
         &__bottom
-        &-links
-            grid-row: 8
-            grid-column: 1
-        &-pay
-            grid-row: 9
-            grid-column: 1
-            justify-self: flex-start
+            &-links
+                grid-row: 8
+                grid-column: 1
+            &-pay
+                grid-row: 9
+                grid-column: 1
+                justify-self: flex-start
         &__input
             flex-basis: 100%
         &__icon-wrapper
@@ -312,13 +312,14 @@
 @media screen and ( max-width: 480px )
     .subscribe
         width: 100%
-    .footer
-        &__categories
-            max-width: 90%
 @media screen and ( max-width: 390px )
     .footer
         &__categories
             max-width: 90%
+@media screen and ( max-width: 350px )
+    .footer
+        &-wrapper
+            grid-template-columns: 280px
 @media screen and ( max-width: 320px )
     .container
         max-width: 280px
@@ -415,10 +416,10 @@
             margin-bottom: 15px
         &__title
             flex-basis: 100%
-        &--inline
-            margin-bottom: 22px
-        &--mb-34
-            margin-bottom: 16px
+            &--inline
+                margin-bottom: 22px
+            &--mb-34
+                margin-bottom: 16px
         &__list
             margin-bottom: 14px
         &__details
@@ -441,9 +442,11 @@
         &__message
             margin-bottom: 16px
         &__bottom
-        &-links
-            min-width: 276px
-        &-pay
-            grid-row: 8
-            margin-top: 24px
-            margin-left: 0
+            &-links
+                min-width: 276px
+            &-pay
+                grid-row: 8
+                margin-top: 24px
+                margin-left: 0
+        &__text
+            max-width: 280px
