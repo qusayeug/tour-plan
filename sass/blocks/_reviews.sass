@@ -1,99 +1,99 @@
 .reviews
-	padding: 40px 0 70px 0
-	&__title
-		font-weight: bold
-		font-size: 36px
-		line-height: 45px
-		text-align: center
-		text-transform: uppercase
-		margin-bottom: 70px
-		margin-top: 0
-	&-slider
-
-		height: 325px
-		&__image
-			margin-right: 2px
-		&__item
-			display: flex
-			flex-direction: column
-			align-items: center
-			max-width: 730px
-			position: relative
-			margin: 45px auto 0
-			background-color: #ffffff
-			border-radius: 8px
-			margin-top: 45px
-			padding: 0 64px 30px 60px
-			&::before
-				content: ""
-				width: 70px
-				height: 48px
-				position: absolute
-				left: 62px
-				top: 13px
-				background: url("../img/quote-right.svg") no-repeat
-			&::after
-				content: ""
-				width: 70px
-				height: 48px
-				position: absolute
-				right: 62px
-				top: 118px
-				background: url("../img/quote-left.svg") no-repeat
-		&__button
-			position: absolute
-			top: 50%
-			transform: translateY(-90%)
-			width: 30px
-			height: 30px
-			background-size: 10px
-			background-position: center
-			cursor: pointer
-			border: none
-			z-index: 99
-			&--prev
-				background-size: 10px
-				background: url("../img/arrow-prev-secondary.svg") no-repeat
-				background-position: center
-				left: 14px
-			&--next
-				background-size: 10px
-				background: url("../img/arrow-next-secondary.svg") no-repeat
-				background-position: center
-				right: 22px
-		&__profile
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-top: -45px
-			margin-bottom: 32px
-
-		&__avatar
-			width: 90px
-			height: 90px
-			border-radius: 50%
-			object-fit: cover
-			margin-bottom: -5px
-		&__username
-			font-weight: bold
-			font-size: 12px
-			line-height: 15px
-			margin-bottom: 10px
-			color: $primary
-		&__date
-			font-weight: normal
-			font-size: 10px
-			line-height: 13px
-			margin-bottom: 4px
-		&__rating
-			display: flex
-			align-items: center
-		&__text
-			max-width: 537px
-			font-weight: normal
-			font-size: 12px
-			line-height: 160%
-			text-align: justify
-			margin: auto
-			overflow-y: auto
-			height: 114px
+    padding: 40px 0 70px 0
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-top: 0
+        margin-bottom: 70px
+    &-slider
+        &__item
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-width: 730px
+            margin: 45px auto 0
+            background-color: #fff
+            border-radius: 8px
+            padding: 0 62px 30px
+            &:before
+                content: ''
+                position: absolute
+                left: 62px
+                top: 13px
+                width: 70px
+                height: 47px
+                background-image: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+            &:after
+                content: ''
+                position: absolute
+                right: 62px
+                top: 118px
+                width: 70px
+                height: 47px
+                background-image: url(../img/quote-right.svg)
+                background-repeat: no-repeat
+        &__button
+            position: absolute
+            top: 50%
+            transform: translateY(-90%)
+            width: 30px
+            height: 30px
+            background-size: 10px
+            background-position: center
+            cursor: pointer
+            border: none
+            z-index: 99
+            &--prev
+                background-size: 10px
+                background: url("../img/arrow-prev-secondary.svg") no-repeat
+                background-position: center
+                left: 14px
+            &--next
+                background-size: 10px
+                background: url("../img/arrow-next-secondary.svg") no-repeat
+                background-position: center
+                right: 22px
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 30px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            // margin-bottom: 9px
+        &__username
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+            margin-bottom: 10px
+        &__date
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
+            margin-bottom: 4px
+        &__rating
+            display: flex
+            align-items: center
+        &__image
+            margin-right: 3px
+        &__text
+            max-width: 537px
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
+            margin: auto

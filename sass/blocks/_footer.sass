@@ -1,0 +1,150 @@
+.footer
+    padding: 108px 0 46px
+    background-color: $dark
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-auto-rows: minmax(40px, min-content)
+        grid-column-gap: 34px
+        grid-row-gap: 20px
+        align-items: start
+    &__title
+        color: $light
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        text-transform: uppercase
+        margin: 0 0 16px
+        white-space: nowrap
+        &--inline
+            margin: 0
+        &--mb-34
+            margin-bottom: 34px
+        &--mb-24
+            margin-bottom: 24px
+    &__ul
+        padding: 0
+        margin: 0
+        list-style: none
+    &__item
+        color: #BDBDBD
+        font-size: 14px
+        line-height: 160%
+        display: flex
+        align-items: flex-start
+        &--mb-19
+            margin-bottom: 19px
+    &__icon
+        vertical-align: middle
+        margin-left: 5px
+        margin-top: 2px
+        &-wrapper
+            min-width: 44px
+    &__link
+        text-decoration: none
+        color: inherit
+    &__text
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+        color: #BDBDBD
+        margin-bottom: 22px
+    &__logo
+        align-self: center
+        grid-row: 1 / 3
+        width: 155px
+    &__categories
+        grid-row: 1 / 4
+    &__social
+        grid-column: span 2
+        grid-row: 2 / 4
+        display: flex
+        max-width: 293px
+        justify-content: space-between
+        align-items: center
+        &-links
+            display: flex
+            justify-content: space-between
+            align-items: center
+            min-width: 85px
+    &__legal
+        grid-column: 4 / 5
+        grid-row: 1 / 2
+        justify-self: end
+    &__details
+        grid-column: span 2
+        &--mt-11
+            margin-top: 11px
+    &__contact-form
+        grid-column: span 2
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 82px
+    &__form
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+    &__input
+        background-color: $light
+        width: 47%
+        padding: 18px 23px
+        margin-bottom: 15px
+        border-radius: 4px
+        border: none
+        outline: none
+        height: 50px
+        &::placeholder
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #BDBDBD
+    &__message
+        background-color: $light
+        flex-basis: 100%
+        padding: 18px 23px
+        border-radius: 4px
+        border: none
+        outline: none
+        margin-bottom: 22px
+        max-height: 123px
+        overflow-y: auto
+        &::placeholder
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #BDBDBD
+    &__button
+        color: $light
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        background-color: $primary
+        padding: 18px 65px
+        min-width: 160px
+        min-height: 50px
+        border-radius: 4px
+    &__requires
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #E0E0E0
+    &__bottom
+        grid-column: 2 / 5
+        &-links
+            color: $light
+            font-size: 12px
+            line-height: 15px
+            grid-column: 2 / 4
+            justify-self: center
+            align-self: start
+            min-width: 283px
+            display: flex
+            justify-content: space-between
+        &-link
+            text-decoration: none
+            color: inherit
+        &-pay
+            justify-self: end
+            &--mt-7
+                margin-top: -7px
