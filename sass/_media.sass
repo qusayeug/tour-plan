@@ -278,6 +278,11 @@
             flex-basis: 100%
         &__icon-wrapper
             min-width: 35px
+    .modal
+        &__button
+            width: 100%
+        &__info
+            margin-top: 10px
 @media screen and ( max-width: 725px )
     .container, .newsletter-wrapper
         max-width: 550px
@@ -354,10 +359,18 @@
     .card
         width: 100%
     .search
-        width: 245px
+        width: 260px
+    .modal
+        &__dialog
+            &--visible
+                width: 460px
 @media screen and ( max-width: 480px )
     .subscribe
         width: 100%
+    .modal
+        &__dialog
+            &--visible
+                width: 90%
 @media screen and ( max-width: 390px )
     .footer
         &__categories
@@ -367,6 +380,8 @@
         &-wrapper
             grid-template-columns: 280px
 @media screen and ( max-width: 320px )
+    .search
+        width: 245px
     .container
         max-width: 280px
     .logo

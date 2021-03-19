@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
@@ -16,7 +19,7 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -254,7 +257,7 @@
                   </a>
                 </div>
                 <!-- /.booking__call-center -->
-                <button class="button booking__button">
+                <button data-toggle="modal" class="button booking__button">
                   View Other Options
                 </button>
               </div>
@@ -284,7 +287,11 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="subscribe.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
@@ -468,11 +475,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo"
-            class="logo footer__logo"
-          />
+          <a href="/" class="logo footer__logo">
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo"
+              class="logo footer__logo"
+            />
+          </a>
+
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -530,9 +540,27 @@
           <div class="footer__social">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#"><img src="img/facebook.svg" alt="facebook" /></a>
-              <a href="#"><img src="img/youtube.svg" alt="youtube" /></a>
-              <a href="#"><img src="img/instagram.svg" alt="instagram" /></a>
+              <a href="#"
+                ><img
+                  src="img/facebook.svg"
+                  alt="facebook"
+                  rel="nofollow noopener"
+                  target="_blank"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/youtube.svg"
+                  alt="youtube"
+                  rel="nofollow noopener"
+                  target="_blank"
+              /></a>
+              <a href="#"
+                ><img
+                  src="img/instagram.svg"
+                  alt="instagram"
+                  rel="nofollow noopener"
+                  target="_blank"
+              /></a>
             </div>
           </div>
           <div class="footer__list footer__legal">
@@ -594,22 +622,25 @@
             <h3 class="footer__title footer__title--mb-34">
               Send us a message
             </h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__requires">* Required Fields</span>
@@ -628,6 +659,48 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-34">booking</h3>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Email*"
+            name="name"
+          />
+          <textarea
+            class="modal__message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
