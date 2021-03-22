@@ -8,15 +8,21 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
-// Формирование самого письма
-$title = "New appeal Best Tour Plan";
-$body = "
-<h2>New Appeal</h2>
-<b>Name:</b> $name<br>
-<b>Number:</b> $phone<br><br>
-<b>Message:</b><br>$message
-";
+if (isset($_POST['email'])) {
+    $title = "New subscriber Best Tour Plan";
+    $body = "
+    <h2>New subscriber</h2>
+    <b>Email:</b> $email";
+} else {
+    $title = "New appeal Best Tour Plan";
+    $body = "
+    <h2>New Appeal</h2>
+    <b>Name:</b> $name<br>
+    <b>Number:</b> $phone<br><br>
+    <b>Message:</b><br>$message";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -28,12 +34,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'eugenekuseybiz@gmail.com'; // Логин на почте
+    $mail->Host       = 'qusay.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'qusayeugene@qusay.ru'; // Логин на почте
     $mail->Password   = 'Kusej521980'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('eugenekuseybiz@gmail.com', 'Eugene Kusey'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('qusayeugene@qusay.ru', 'Евгений'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('evgen.kusey@gmail.com');
