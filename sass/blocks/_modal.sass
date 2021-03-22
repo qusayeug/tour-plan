@@ -32,17 +32,6 @@
         &--visible
             visibility: visible
             opacity: 1
-    &__close
-        position: absolute
-        top: 17px
-        right: 18px
-        text-decoration: none
-        cursor: pointer
-        // position: absolute
-        // right: 18px
-        // top: 17px
-        // text-decoration: none
-        // cursor: pointer
     &__title
         margin: 0
         font-style: normal
@@ -54,48 +43,23 @@
         text-align: center
     &__input
         padding: 16px 0 16px 25px
-        margin-top: 15px
         width: 100%
-        background-color: #fff
-        border-radius: 4px
-        border: none
-        &::placeholder
-            font-weight: normal
-            font-size: 12px
-            line-height: 15px
-            color: #BDBDBD
+        &_group
+            position: relative
+            width: 100%
+            margin-top: 15px
     &__message
         flex-basis: 100%
         width: 100%
-        height: 123px
         margin-top: 15px
-        background-color: #fff
-        border-radius: 4px
-        border: none
-        resize: none
-        padding: 18px 0 10px 23px
-        &::placeholder
-            font-weight: normal
-            font-size: 12px
-            line-height: 15px
-            color: #BDBDBD
     &__button
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
-        color: $light
-        background-color: $primary
-        padding: 17px 20px 18px 20px
-        min-width: 160px
-        border-radius: 4px
-        border: none
         margin-top: 15px
-    &__info
-        font-style: normal
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
-        color: #E0E0E0
+    &__close
+        position: absolute
+        top: 17px
+        right: 18px
+        text-decoration: none
+        cursor: pointer
     &__form
         display: flex
         align-items: center

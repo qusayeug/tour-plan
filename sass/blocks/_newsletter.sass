@@ -37,8 +37,6 @@
     position: relative
     width: 350px
     height: 55px
-    border-radius: 4px
-    overflow: hidden
     &__input
         position: absolute
         width: 100%
@@ -49,7 +47,12 @@
         font-size: 14px
         line-height: 18px
         border: none
+        border-radius: 4px
+        &::placeholder
+            color: #BDBDBD
     &__button
+        border-top-right-radius: 4px
+        border-bottom-right-radius: 4px
         min-width: 65px
         position: absolute
         top: 0

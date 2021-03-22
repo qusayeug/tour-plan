@@ -517,7 +517,7 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe form"
+          class="subscribe newsletter__subscribe newsletter__form form"
         >
           <input
             type="email"
@@ -823,9 +823,17 @@
                     alt="icon: phone"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
-                Saturday: 52&nbsp;-56-61-38 (08:00 am – 20:00&nbsp;pm)<br />Tel
-                (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__text-tel">
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer__tel">269 1500</a>
+                  <br />Tel (hotline) Monday - Saturday:
+                  <a href="52-56-61-38" class="footer__tel"
+                    >52&nbsp;-56-61-38</a
+                  >
+                  (08:00 am – 20:00&nbsp;pm) <br />Tel (hotline) Sunday:
+                  <a href="52-56-61-38" class="footer__tel">52-56-61-38</a>
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item_mb">
                 <div class="footer__icon-wrapper">
@@ -868,7 +876,6 @@
                 class="message footer__message"
                 placeholder="Message"
                 name="message"
-                required
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="info footer__info">* Required Fields</span>
@@ -891,49 +898,49 @@
     </footer>
     <div class="modal">
       <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="icon: close" />
+          <img src="img/close.svg" alt="close" class="modal__close-img" />
         </a>
-        <h3 class="modal__title modal__title--mb-34">booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="modal__input phone"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <div class="modal__input_group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input_group">
+            <input
+              type="tel"
+              class="input modal__input modal__input_tel"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="modal__input_group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
           <textarea
-            class="modal__message"
-            cols="30"
-            rows="10"
+            class="message modal__message"
             placeholder="Message"
-            name="message"
           ></textarea>
-          <button class="button modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="info modal__info">* Required Fields</span>
         </form>
       </div>
-      <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

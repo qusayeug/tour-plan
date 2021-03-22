@@ -123,6 +123,9 @@
                 min-width: 45px
     .disclaimer
         padding-top: 56px
+    .modal
+        &__dialog
+            padding: 33px 50px 33px 50px
 @media screen and ( max-width: 820px )
     .container, .newsletter-wrapper
         max-width: 700px
@@ -262,6 +265,16 @@
     .disclaimer
         &__icons
             margin-left: 0
+    .modal
+        &__dialog
+            padding: 33px 30px 33px 30px
+        &__button
+            order: 1
+        &__info
+            margin-bottom: 10px
+        &__message
+            min-height: 100px
+
 @media screen and ( max-width: 725px )
     .container, .newsletter-wrapper
         max-width: 550px
@@ -390,6 +403,10 @@
             margin-right: 9px
             &:last-child
                 margin-right: 0
+    .modal
+    &__dialog
+        margin: auto
+        width: 70%
 @media screen and ( max-width: 576px )
     .hotel
         &__slider
@@ -447,6 +464,15 @@
     .footer
         &__disclaimer
             display: block
+@media screen and (max-height: 500px)
+    .modal
+        &__dialog
+            overflow-y: auto
+            max-height: 90%
+            width: 80%
+        &__input
+            margin-bottom: 10px
+
 @media screen and ( max-width: 480px )
     .subscribe
         width: 100%
@@ -465,6 +491,16 @@
             margin-right: 9px
             &:last-child
                 margin-right: 0
+    .modal
+        &__dialog
+            width: 85%
+        &__title
+            font-size: 16px
+        &__input
+            padding: 12px 0 12px 15px
+        &__message
+            padding: 12px 0 12px 15px
+            margin-bottom: 15px
 @media screen and ( max-width: 320px )
     .search
         width: 245px
