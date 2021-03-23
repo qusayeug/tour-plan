@@ -11,6 +11,7 @@ body {
   font-family: 'Mulish', serif;
   background-color: #F5FAFE;
   color: #333333;
+  overflow-x: hidden;
 }
 
 .container {
@@ -167,7 +168,7 @@ button {
 label.invalid {
   position: absolute;
   top: -20px;
-  left: 10px;
+  left: 5px;
   font-size: 14px;
   background-color: #EC1F46;
   color: #fff;
@@ -1605,7 +1606,7 @@ template {
   width: 100%;
 }
 
-.modal__input_group {
+.modal__input-group {
   position: relative;
   width: 100%;
   margin-top: 15px;
@@ -2360,6 +2361,7 @@ template {
     margin-left: 0;
   }
   .modal__dialog {
+    width: 80%;
     padding: 33px 30px 33px 30px;
   }
   .modal__button {
@@ -2378,7 +2380,7 @@ template {
 
 @media screen and (max-width: 725px) {
   .container, .newsletter-wrapper {
-    max-width: 550px;
+    max-width: 600px;
     width: 92%;
   }
   .stars {
@@ -2471,6 +2473,10 @@ template {
 }
 
 @media screen and (max-width: 660px) {
+  .container, .newsletter-wrapper {
+    max-width: 600px;
+    width: 97%;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2590,6 +2596,10 @@ template {
 }
 
 @media screen and (max-width: 576px) {
+  .container, .newsletter-wrapper {
+    max-width: 600px;
+    width: 95%;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -2804,6 +2814,13 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .hotels {
+    -ms-grid-rows: 620px;
+        grid-template-rows: 620px;
+  }
+  .hotels__text {
+    max-height: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */

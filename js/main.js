@@ -61,13 +61,18 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Use form name@mail.ru"
         },
         phone: {
-          required: "Telephone required",
+          required: "Telephone required ",
+          minlength: "At least 18 letters",
         },
       }
     });
   });
-  $('.phone').mask('+7 (999) 999-99-99');
+  $('.modal__input_tel').mask('+0 (000) 000-00-00');
+  $('.footer__input_tel').mask('+0 (000) 000-00-00');
+  AOS.init({
+    disable: 'mobile',
+  });
 });

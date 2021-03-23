@@ -267,6 +267,7 @@
             margin-left: 0
     .modal
         &__dialog
+            width: 80%
             padding: 33px 30px 33px 30px
         &__button
             order: 1
@@ -277,7 +278,7 @@
 
 @media screen and ( max-width: 725px )
     .container, .newsletter-wrapper
-        max-width: 550px
+        max-width: 600px
         width: 92%
     .stars
         flex-basis: auto
@@ -334,6 +335,9 @@
         width: 49%
         height: 250px
 @media screen and ( max-width: 660px)
+    .container, .newsletter-wrapper
+        max-width: 600px
+        width: 97%
     .footer
         &-wrapper
             grid-template-columns: 1fr
@@ -408,6 +412,9 @@
         margin: auto
         width: 70%
 @media screen and ( max-width: 576px )
+    .container, .newsletter-wrapper
+        max-width: 600px
+        width: 95%
     .hotel
         &__slider
             margin-bottom: 20px
@@ -583,3 +590,7 @@
                     margin-left: 89px
     .card
         width: 100%
+    .hotels
+        grid-template-rows: 620px
+        &__text
+            max-height: 170px

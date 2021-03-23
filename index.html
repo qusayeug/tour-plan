@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -164,7 +165,7 @@
         </div>
 
         <!-- /.hotel-info -->
-        <div class="hotel-grid">
+        <div class="hotel-grid" data-aos="fade-up" data-aos-delay="300">
           <!-- Slider main container -->
           <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
@@ -280,7 +281,11 @@
     <section class="packages">
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
-        <div class="packages__grid hotels">
+        <div
+          class="packages__grid hotels"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <div class="hotels-big">
             <div class="hotels__image hotels__image_big">
               <img
@@ -534,7 +539,11 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
-        <div class="swiper-container reviews-slider">
+        <div
+          class="swiper-container reviews-slider"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -639,10 +648,14 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="activities">
+    <section class="activities" data-aos="fade-up" data-aos-duration="3000">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
-        <div class="activities-wrapper">
+        <div
+          class="activities-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div class="card activities__card">
             <img
               src="img/activity-1.jpg"
@@ -866,9 +879,10 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input"
+                  class="input footer__input footer__input_tel"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="18"
                   required
                 />
               </div>
@@ -904,7 +918,7 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <div class="modal__input_group">
+          <div class="modal__input-group">
             <input
               type="text"
               class="input modal__input"
@@ -914,20 +928,21 @@
               minlength="2"
             />
           </div>
-          <div class="modal__input_group">
+          <div class="modal__input-group">
             <input
               type="tel"
               class="input modal__input modal__input_tel"
               placeholder="Phone Number*"
               name="phone"
               required
+              minlength="18"
             />
           </div>
-          <div class="modal__input_group">
+          <div class="modal__input-group">
             <input
               type="email"
               class="input modal__input"
-              placeholder="Email*"
+              placeholder="Your email address*"
               name="email"
               required
             />
@@ -947,6 +962,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
