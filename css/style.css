@@ -1277,6 +1277,10 @@ template {
           background-size: cover;
 }
 
+.newsletter label.invalid {
+  left: 15px;
+}
+
 .newsletter::before {
   content: "";
   position: absolute;
@@ -1542,6 +1546,10 @@ template {
   overflow-y: auto;
 }
 
+.modal label.invalid {
+  left: 6px;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1754,6 +1762,10 @@ template {
   padding-bottom: 46px;
   background-color: #0A223D;
   color: #FFF;
+}
+
+.footer label.invalid {
+  left: 4px;
 }
 
 .footer-wrapper {
@@ -2142,6 +2154,15 @@ template {
   }
   .modal__dialog {
     padding: 33px 50px 33px 50px;
+  }
+  .navbar-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 }
 
@@ -2721,6 +2742,9 @@ template {
     padding: 12px 0 12px 15px;
     margin-bottom: 15px;
   }
+  .modal label.invalid {
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -2786,6 +2810,9 @@ template {
     font-weight: normal;
     font-size: 30px;
   }
+  .newsletter label.invalid {
+    left: 1px;
+  }
   .subscribe__input {
     padding-left: 20px;
     padding-right: 74px;
@@ -2821,6 +2848,9 @@ template {
   }
   .hotels__text {
     max-height: 170px;
+  }
+  .footer label.invalid {
+    left: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -126,6 +126,10 @@
     .modal
         &__dialog
             padding: 33px 50px 33px 50px
+    .navbar
+        &-menu
+            display: flex
+            justify-content: space-around
 @media screen and ( max-width: 820px )
     .container, .newsletter-wrapper
         max-width: 700px
@@ -508,6 +512,8 @@
         &__message
             padding: 12px 0 12px 15px
             margin-bottom: 15px
+        label.invalid
+            left: 0px
 @media screen and ( max-width: 320px )
     .search
         width: 245px
@@ -565,6 +571,8 @@
             &__strong
                 font-weight: normal
                 font-size: 30px
+        label.invalid
+            left: 1px
     .subscribe
         &__input
             padding-left: 20px
@@ -594,3 +602,6 @@
         grid-template-rows: 620px
         &__text
             max-height: 170px
+    .footer
+        label.invalid
+            left: 5px
