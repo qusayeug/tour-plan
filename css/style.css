@@ -2334,6 +2334,9 @@ template {
     margin-left: 0;
     margin-top: 10px;
   }
+  .hotel {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
