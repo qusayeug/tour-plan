@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -223,11 +224,11 @@
           <div class="footer__social-network">
             <div class="footer__title footer__title_inline">Social Network</div>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="#" class="footer__link" target="_blank" rel="nofollow"
                 ><img src="img/facebook.svg" alt="icon: facebook" /></a
-              ><a href="#" class="footer__link"
+              ><a href="#" class="footer__link" target="_blank" rel="nofollow"
                 ><img src="img/youtube.svg" alt="icon: youtube" /></a
-              ><a href="#" class="footer__link"
+              ><a href="#" class="footer__link" target="_blank" rel="nofollow"
                 ><img src="img/instagram.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -276,9 +277,17 @@
                     alt="icon: phone"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
-                Saturday: 52&nbsp;-56-61-38 (08:00 am – 20:00&nbsp;pm)<br />Tel
-                (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__text-tel">
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer__tel">269 1500</a>
+                  <br />Tel (hotline) Monday - Saturday:
+                  <a href="52-56-61-38" class="footer__tel"
+                    >52&nbsp;-56-61-38</a
+                  >
+                  (08:00 am – 20:00&nbsp;pm) <br />Tel (hotline) Sunday:
+                  <a href="52-56-61-38" class="footer__tel">52-56-61-38</a>
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item_mb">
                 <div class="footer__icon-wrapper">
@@ -311,9 +320,10 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input"
+                  class="input footer__input footer__input_tel"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="18"
                   required
                 />
               </div>
@@ -341,9 +351,13 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

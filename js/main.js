@@ -75,4 +75,9 @@ $(document).ready(function () {
   AOS.init({
     disable: 'mobile',
   });
+  $("body").keydown(function (event) { 
+    if(event.which == 27) {
+      closeModal(event);
+    }
+});
 });
