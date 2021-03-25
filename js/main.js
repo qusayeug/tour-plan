@@ -65,7 +65,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Telephone required ",
-          minlength: "At least 18 letters",
+          minlength: "+0 (000) 000-00-00",
         },
       }
     });
@@ -81,3 +81,4 @@ $(document).ready(function () {
     }
 });
 });
+  

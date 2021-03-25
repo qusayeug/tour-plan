@@ -11,6 +11,8 @@
     &-wrapper
         display: flex
         justify-content: space-between
+    &__card
+        padding-left: 15px
 .card
     position: relative
     display: flex
@@ -21,6 +23,8 @@
     height: 255px
     border-radius: 6px
     overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     &::before
         content: ''
         position: absolute
@@ -48,6 +52,9 @@
         font-weight: bold
         font-size: 16px
         line-height: 20px
+        overflow: hidden
+        text-overflow: ellipsis
+
     &__button
         font-family: 'Nunito', sans-serif
         font-style: normal
@@ -60,3 +67,9 @@
         background-color: $primary
         border-radius: 4px
         cursor: pointer
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        max-width: 101px
+.card.activities__card
+    padding-left: 15px

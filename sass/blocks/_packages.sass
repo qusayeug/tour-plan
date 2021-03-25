@@ -32,6 +32,10 @@
         font-size: 14px
         line-height: 19px
         border: none
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        max-width: 130px
         color: $light
         &_big
             bottom: 30px
@@ -63,11 +67,14 @@
         font-size: 14px
         line-height: 160.6%
         margin-bottom: 43px
-
+        overflow-y: auto
+        height: 154px
     &__desciption
         margin-bottom: 24px
         &_big
             margin-bottom: 37px
+        &-wrap
+            overflow-y: auto
     &__advantages
         margin-bottom: 8px
     &__icon

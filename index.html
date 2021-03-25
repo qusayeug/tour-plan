@@ -10,7 +10,6 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -295,37 +294,44 @@
                 class="hotels__image hotels__image-big"
               />
             </div>
-
             <div class="hotels-info hotels-info_big">
-              <div class="stars hotels__stars">
-                <img src="img/star.svg" alt="star" class="stars__elem" />
-                <img src="img/star.svg" alt="star" class="stars__elem" />
-                <img src="img/star.svg" alt="star" class="stars__elem" />
-                <img src="img/star.svg" alt="star" class="stars__elem" />
-                <img src="img/star.svg" alt="star" class="stars__elem" />
-              </div>
-              <h3 class="hotels__title hotels__title_big">Hotel Blue Haven</h3>
-              <p class="hotels__text">
-                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
-                enim laborum magna llit. Ipsum est fugiat velit ea llamco do
-                esse ut in veniam sun in onsequat. Aute quis duis epteur
-                excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
-                mollit. Ipsum est fugiat velit ea ullamco do
-              </p>
-              <div class="hotels__desciption hotels__desciption_big">
-                <div class="hotels__advantages advantages">
-                  <img src="img/gps.svg" alt="icon: gps" class="hotels__icon" />
-                  <span class="advantages__text"
-                    >1749 Wheeler Ridge Delaware</span
-                  >
+              <div class="hotels__desciption-wrap">
+                <div class="stars hotels__stars">
+                  <img src="img/star.svg" alt="star" class="stars__elem" />
+                  <img src="img/star.svg" alt="star" class="stars__elem" />
+                  <img src="img/star.svg" alt="star" class="stars__elem" />
+                  <img src="img/star.svg" alt="star" class="stars__elem" />
+                  <img src="img/star.svg" alt="star" class="stars__elem" />
                 </div>
-                <div class="hotels__advantages advantages">
-                  <img src="img/user.svg" alt="user" class="hotels__icon" />
-                  <span class="advantages__text">2 x Guests</span>
-                </div>
-                <div class="hotels__advantages advantages">
-                  <img src="img/home.svg" alt="home" class="hotels__icon" />
-                  <span class="advantages__text">1 x Room</span>
+                <h3 class="hotels__title hotels__title_big">
+                  Hotel Blue Haven
+                </h3>
+                <p class="hotels__text">
+                  Aute quis duis excepteur excepteur ipsum cat eiusmod
+                  consectetur enim laborum magna llit. Ipsum est fugiat velit ea
+                  llamco do esse ut in veniam sun in onsequat. Aute quis duis
+                  epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum
+                  magna mollit. Ipsum est fugiat velit ea ullamco do
+                </p>
+                <div class="hotels__desciption hotels__desciption_big">
+                  <div class="hotels__advantages advantages">
+                    <img
+                      src="img/gps.svg"
+                      alt="icon: gps"
+                      class="hotels__icon"
+                    />
+                    <span class="advantages__text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotels__advantages advantages">
+                    <img src="img/user.svg" alt="user" class="hotels__icon" />
+                    <span class="advantages__text">2 x Guests</span>
+                  </div>
+                  <div class="hotels__advantages advantages">
+                    <img src="img/home.svg" alt="home" class="hotels__icon" />
+                    <span class="advantages__text">1 x Room</span>
+                  </div>
                 </div>
               </div>
               <!-- /.hotels__desciption -->
@@ -353,23 +359,30 @@
               />
             </div>
             <div class="hotels-info">
-              <h3 class="hotels__title">LUX* Belle Mare</h3>
-              <div class="hotels__desciption">
-                <div class="hotels__advantages advantages">
-                  <img src="img/gps.svg" alt="icon: gps" class="hotels__icon" />
-                  <span class="advantages__text"
-                    >1749 Wheeler Ridge Delaware</span
-                  >
-                </div>
-                <div class="hotels__advantages advantages">
-                  <img src="img/user.svg" alt="user" class="hotels__icon" />
-                  <span class="advantages__text">2 x Guests</span>
-                </div>
-                <div class="hotels__advantages advantages">
-                  <img src="img/home.svg" alt="" class="hotels__icon" />
-                  <span class="advantages__text">1 x Room</span>
+              <div class="hotels__info-description">
+                <h3 class="hotels__title">LUX* Belle Mare</h3>
+                <div class="hotels__desciption">
+                  <div class="hotels__advantages advantages">
+                    <img
+                      src="img/gps.svg"
+                      alt="icon: gps"
+                      class="hotels__icon"
+                    />
+                    <span class="advantages__text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotels__advantages advantages">
+                    <img src="img/user.svg" alt="user" class="hotels__icon" />
+                    <span class="advantages__text">2 x Guests</span>
+                  </div>
+                  <div class="hotels__advantages advantages">
+                    <img src="img/home.svg" alt="" class="hotels__icon" />
+                    <span class="advantages__text">1 x Room</span>
+                  </div>
                 </div>
               </div>
+              <!-- /.hotels__info-description -->
               <!-- /.hotels__desciption -->
               <div class="packages-price">
                 <div class="packages-price__pricetag">$ 8,500</div>
@@ -784,11 +797,23 @@
           <div class="footer__social-network">
             <div class="footer__title footer__title_inline">Social Network</div>
             <div class="footer__social-links">
-              <a href="#" class="footer__link" target="_blank" rel="nofollow"
+              <a
+                href="https://www.facebook.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow"
                 ><img src="img/facebook.svg" alt="icon: facebook" /></a
-              ><a href="#" class="footer__link" target="_blank" rel="nofollow"
+              ><a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow"
                 ><img src="img/youtube.svg" alt="icon: youtube" /></a
-              ><a href="#" class="footer__link" target="_blank" rel="nofollow"
+              ><a
+                href="https://www.instagram.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow"
                 ><img src="img/instagram.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -841,11 +866,11 @@
                   Tel (business hours) :
                   <a href="tel:2691500" class="footer__tel">269 1500</a>
                   <br />Tel (hotline) Monday - Saturday:
-                  <a href="52-56-61-38" class="footer__tel"
-                    >52&nbsp;-56-61-38</a
+                  <a href="tel:52-56-61-38" class="footer__tel"
+                    ><nobr>52-56-61-38</nobr></a
                   >
                   (08:00 am – 20:00&nbsp;pm) <br />Tel (hotline) Sunday:
-                  <a href="52-56-61-38" class="footer__tel">52-56-61-38</a>
+                  <a href="tel:52-56-61-38" class="footer__tel">52-56-61-38</a>
                   (08:00 am – 14:00 pm)
                 </div>
               </li>
@@ -949,6 +974,7 @@
             />
           </div>
           <textarea
+            name="message"
             class="message modal__message"
             placeholder="Message"
           ></textarea>
